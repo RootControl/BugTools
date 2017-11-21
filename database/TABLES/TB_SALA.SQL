@@ -1,0 +1,9 @@
+USE projeto;
+
+DROP TABLE IF EXISTS sala;
+
+CREATE TABLE sala ( -- OK
+
+cod_sala INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
+num_sala INT NOT NULL
+);

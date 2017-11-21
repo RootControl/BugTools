@@ -1,0 +1,9 @@
+USE projeto;
+
+DROP TABLE IF EXISTS tipo;
+
+CREATE TABLE tipo ( -- OK
+
+cod_tipo INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
+tipo VARCHAR (25) NOT NULL
+);

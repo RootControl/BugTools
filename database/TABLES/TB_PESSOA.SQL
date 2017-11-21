@@ -1,0 +1,17 @@
+USE projeto;
+
+DROP TABLE IF EXISTS pessoa;
+
+CREATE TABLE pessoa ( -- OK
+
+cod_pessoa INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
+cod_suporte boolean,
+nome VARCHAR (25) NOT NULL,
+sobrenome VARCHAR (50) NOT NULL,
+id_pessoa VARCHAR(20) NOT NULL,
+login VARCHAR (20) NOT NULL,
+senha VARCHAR (20) NOT NULL,
+email VARCHAR (100) NOT NULL,
+deletado BOOLEAN NOT NULL DEFAULT FALSE,
+usuario VARCHAR (25) NOT NULL 
+);

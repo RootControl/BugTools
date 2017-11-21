@@ -1,0 +1,8 @@
+-- USE DATABASE projeto
+USE projeto
+-- DELETE RECORDS FROM statuspc
+DELETE FROM statuspc;
+-- INSERT INTO statuspc
+INSERT INTO statuspc VALUES ('1','QUEBRADO');
+INSERT INTO statuspc VALUES ('2','MANUTENCAO');
+INSERT INTO statuspc VALUES ('3','OPERANTE');

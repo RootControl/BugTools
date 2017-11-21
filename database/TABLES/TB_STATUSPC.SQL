@@ -1,0 +1,8 @@
+USE projeto;
+
+DROP TABLE IF EXISTS statuspc;
+
+CREATE TABLE statuspc ( -- OK
+cod_status INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
+tipo VARCHAR (100) NOT NULL
+);

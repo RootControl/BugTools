@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="550.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controle.AnchorPaneRelatoriosControle">
+   <children>
+      <SplitPane layoutX="-2.0" layoutY="-2.0" orientation="VERTICAL" prefHeight="550.0" prefWidth="800.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <items>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="668.0">
+               <children>
+                  <TableView fx:id="tableView" layoutX="7.0" layoutY="7.0" prefHeight="548.0" prefWidth="798.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <columns>
+                        <TableColumn fx:id="tableColumnSala" prefWidth="54.0" text="Sala" />
+                        <TableColumn fx:id="tableColumnPC" prefWidth="62.0" text="PC" />
+                        <TableColumn fx:id="tableColumnTipo" prefWidth="108.0" text="Tipo" />
+                        <TableColumn fx:id="tableColumnDescricao" prefWidth="240.0" text="Descrição" />
+                        <TableColumn fx:id="tableColumnNome" prefWidth="138.0" text="Nome" />
+                        <TableColumn fx:id="tableColumnRA" prefWidth="81.0" text="RA" />
+                        <TableColumn fx:id="tableColumnEmail" prefWidth="130.0" text="Email" />
+                     </columns>
+                  </TableView>
+               </children>
+            </AnchorPane>
+         </items>
+      </SplitPane>
+   </children>
+</AnchorPane>

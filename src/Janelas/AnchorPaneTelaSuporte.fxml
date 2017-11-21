@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="550.0" prefWidth="670.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controle.AnchorPaneTelaSuporteControle">
+   <children>
+      <SplitPane dividerPositions="0.8667883211678832" layoutX="-2.0" layoutY="-2.0" orientation="VERTICAL" prefHeight="550.0" prefWidth="670.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <items>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="668.0">
+               <children>
+                  <TableView fx:id="tableView" layoutX="7.0" layoutY="7.0" prefHeight="464.0" prefWidth="668.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                    <columns>
+                      <TableColumn fx:id="tableColumnId" prefWidth="72.0" text="ID" />
+                      <TableColumn fx:id="tableColumnTipo" prefWidth="92.0" text="Tipo" />
+                        <TableColumn fx:id="tableColumnData" prefWidth="141.0" text="Data de Abertura" />
+                        <TableColumn fx:id="tableColumnDescricao" prefWidth="362.0" text="Descrição" />
+                    </columns>
+                  </TableView>
+               </children>
+            </AnchorPane>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+               <children>
+                  <Button fx:id="buttonDetalhes" layoutX="14.0" layoutY="23.0" mnemonicParsing="false" onAction="#handleButtonDetalhes" text="Detalhes" />
+                  <Button fx:id="buttonResolvidos" layoutX="345.0" layoutY="23.0" mnemonicParsing="false" onAction="#handleButtonResolvidos" text="Resolvidos" />
+                  <Button fx:id="buttonRelatorio" layoutX="497.0" layoutY="23.0" mnemonicParsing="false" onAction="#handleButtonRelatorios" text="Relatório" />
+                  <Button fx:id="buttonProblemas" layoutX="250.0" layoutY="23.0" mnemonicParsing="false" onAction="#handleButtonProlemas" text="Problemas" />
+                  <Button fx:id="buttonSair" layoutX="618.0" layoutY="23.0" mnemonicParsing="false" onAction="#handleButtonSair" text="Sair" />
+               </children>
+            </AnchorPane>
+        </items>
+      </SplitPane>
+   </children>
+</AnchorPane>
